@@ -83,7 +83,7 @@ export interface ScaleContinuousNumeric<Range, Output> {
     /**
      * Returns a copy of the scale’s current range.
      */
-    range(): Range[];
+    range(): Output[];
     /**
      * Sets the scale’s range to the specified array of values.
      *
@@ -92,7 +92,7 @@ export interface ScaleContinuousNumeric<Range, Output> {
      *
      * @param range Array of range values.
      */
-    range(range: ReadonlyArray<Range>): this;
+    range(range: ReadonlyArray<Output>): this;
 
     /**
      * Sets the scale’s range to the specified array of values while also setting the scale’s interpolator to interpolateRound.
